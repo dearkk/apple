@@ -1,0 +1,13 @@
+version: v1.0.1
+module:
+  - name: sso
+    enable: true
+    version: v1.0.1
+  - name: power
+    enable: true
+    version: v1.0.1
+    args:
+      - name: ip
+        value: port
+      - name: user
+        value: user
