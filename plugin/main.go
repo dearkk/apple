@@ -1,11 +1,10 @@
 package main
 
-import "master/src"
+import (
+	"github.com/dearkk/component/market"
+	"master/src"
+)
 
-func init() {
-
-}
-
-func Load() interface{} {
-	return new(src.HelloObject)
+func Load() market.Load {
+	return &src.Apple{}
 }
